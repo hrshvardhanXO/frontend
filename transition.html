@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        height: 100vh;
+        background-color: black;
+    }
+    .box{
+        height: 200px;
+        width: 200px;
+        background-color: chartreuse;
+        cursor: pointer;
+        transition: background-color, border-radius;
+        transition-timing-function: ease-in;
+        transition-duration: 1s;
+        display: inline-block;
+       
+    }
+    .box:hover
+{
+    background-color: white;
+    border-radius: 100px;
+    height :200px;
+    transform: scale(2);
+    transform: rotate(90deg);
+    transition: skew(-90deg);
+    transition: scale(1);
+}
+</style>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

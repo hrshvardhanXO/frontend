@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+       height: 100vh;
+       display: grid;
+       grid-template-columns: 2fr 2fr 2fr;
+
+    }
+    .box{
+        height: 200px;
+        
+        border: 2px solid black;
+        background-color: yellow;
+    }
+    #innerbox{
+        display: grid;
+        color: 2px solid black;
+        background-color: yellow;
+    }
+    .innerbox{
+        height: 100%;
+        border: 2px solid black;
+        background-color: black;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="innerbox" id="innerbox">
+        <div class="innerbox" ></div>
+        <div class="innerbox"></div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
